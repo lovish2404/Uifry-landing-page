@@ -1,0 +1,733 @@
+@font-face {
+  font-family: "Clash Display";
+  src: url("./fonts/ClashDisplay-Regular.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Clash Display Bold";
+  src: url("./fonts/ClashDisplay-Semibold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  padding: 0px;
+}
+.main {
+  padding: 0px;
+}
+img {
+  display: block;
+}
+.relative {
+  position: relative;
+  overflow-x: clip;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 6vw;
+  min-height: 50px;
+  margin: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+#logo {
+  width: 3%;
+  min-width: 30px;
+  height: auto;
+  margin: 0 0.3% 0.7% 2%;
+}
+
+.links {
+  font-family: "Clash Display";
+  font-size: 1.45rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.625rem;
+  display: flex;
+  gap: 2vw;
+}
+
+@media screen and (max-width: 970px) {
+  .links {
+    display: none;
+  }
+}
+
+li,
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.links a:first-of-type {
+  font-family: "Clash Display Bold";
+  color: red;
+}
+
+.downloadBtn {
+  font-size: 1.25rem;
+  font-family: "Clash Display";
+  margin: 30px;
+  background: black;
+  height: 50px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.downloadBtn a {
+  color: white;
+}
+
+#navStar {
+  position: absolute;
+  right: -3%;
+  z-index: -1;
+  bottom: -2%;
+}
+
+.radial {
+  width: 15.5vw;
+  height: 8vw;
+  background: radial-gradient(
+      circle at bottom,
+      rgb(255 101 73),
+      rgb(124 39 24 / 0%) 77%
+    ),
+    radial-gradient(
+      circle at top,
+      rgba(255, 215, 0, 1),
+      rgba(255, 215, 0, 0) 80%
+    );
+  border-radius: 50%;
+  filter: blur(30px);
+}
+
+.backgroundEllipses {
+  position: absolute;
+  width: 100%;
+  padding-top: 80%;
+  transform: rotate(45deg);
+  margin: auto;
+}
+
+.ellipse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 58%;
+  border: 1px solid black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.backgroundEllipses #second {
+  transform: translate(-50%, -60%);
+}
+
+.backgroundEllipses #third {
+  transform: translate(-50%, -70%);
+}
+
+.hero {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+#starHero1 {
+  position: absolute;
+  top: 1%;
+  z-index: -2;
+}
+
+.header {
+  width: 50%;
+  position: relative;
+}
+
+.header .radial {
+  position: absolute;
+  z-index: -1;
+}
+
+.heading {
+  width: 100%;
+  margin-left: 5%;
+  font-family: "Clash Display";
+}
+
+.heading h1 {
+  font-family: "Clash Display Bold";
+  font-size: calc(1.5rem + 3.25vw);
+  line-height: calc(1.5rem + 3.25vw);
+  margin: 1.5rem 0;
+}
+
+.heading p {
+  font-size: calc(0.5rem + 0.6vw);
+  padding-right: 2rem;
+}
+
+.heroBtns {
+  display: flex;
+  width: 72%;
+  margin-left: 10%;
+  justify-content: flex-start;
+}
+
+.heroBtn1,
+.heroBtn2 {
+  background: black;
+  color: white;
+  display: flex;
+  height: 4vw;
+  width: 40%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  align-items: center;
+}
+
+.heroBtn1 span {
+  font-size: calc(0.5rem + 0.6vw);
+}
+
+.heroBtn1 img {
+  width: 2.2vw;
+}
+
+.heroBtn2 {
+  border: none;
+  gap: 8%;
+  background: none;
+  color: black;
+}
+
+#textA {
+  position: absolute;
+  left: -4vw;
+  top: -1vw;
+  width: auto;
+  height: 6vw;
+  transform: rotate(28deg);
+}
+
+.flagBlack {
+  position: absolute;
+  top: 9vw;
+  background: black;
+  width: 27vw;
+  display: flex;
+  font-size: 0.7vw;
+  height: 4vw;
+  transform: rotate(-28deg);
+}
+
+#flagAchievements,
+#flagFinance {
+  color: white;
+  display: flex;
+  width: 47%;
+  gap: 4%;
+  align-items: center;
+  padding-left: 3%;
+}
+
+.flagAchievementsFirst,
+.flagFinance1 {
+  border: solid 1px #ab3d3d;
+  border-radius: 50%;
+}
+
+.flagAchievementsSecond span {
+  display: block;
+}
+
+.flagFinance {
+  width: 47%;
+  padding-left: 3%;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 4%;
+}
+
+#slash {
+  color: white;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+}
+
+.heroPhones {
+  width: 50%;
+  position: relative;
+}
+
+/* new css */
+.headerRadial {
+  position: relative;
+  left: 20vw;
+  width: 100%;
+}
+
+.heroFlag {
+  position: relative;
+  /* height: 12%; */
+  width: 60%;
+  margin-left: 10%;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.financeContainer1 {
+  position: absolute;
+  /* top: 9vw; */
+  background: black;
+  width: 100%;
+  /* width: 27vw; */
+  display: flex;
+  font-size: 0.7vw;
+  height: 4vw;
+  transform: rotate(-28deg);
+  z-index: 1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.financeEnd1 {
+  background: white;
+  position: absolute;
+  width: 2rem;
+  right: -2vw;
+  top: 0;
+  height: 4vw;
+  z-index: 2;
+}
+
+.financeContainer2 {
+  background: #ff5555;
+  width: 20vw;
+  display: flex;
+  font-size: 0.7vw;
+  height: 4vw;
+  position: absolute;
+  transform: rotate(-48deg);
+  position: absolute;
+  right: -0.8vw;
+  top: 0.95vw;
+  align-self: flex-end;
+  border-bottom-right-radius: 5px;
+}
+
+.flagAchievements2 {
+  color: black;
+  font-weight: bold;
+  height: 100;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.financeEnd2 {
+  background: white;
+  position: absolute;
+  width: 2rem;
+  height: 5vw;
+  z-index: 2;
+  left: -17px;
+  bottom: 0px;
+  transform: rotate(20deg);
+}
+
+.financeContainer3 {
+  background: #ff5555;
+  width: 17vw;
+  display: flex;
+  font-size: 0.7vw;
+  height: 4vw;
+  right: 5.5vw;
+  position: absolute;
+  transform: rotate(48deg);
+  top: 5.5vw;
+  align-self: flex-end;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.starImg3Container {
+  margin-left: 5rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.starImg3 {
+  /* margin-left:5rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black; */
+  height: 80%;
+  margin: 0 1rem;
+}
+
+.financeContainer3Text {
+  margin: auto;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.phones {
+  width: 100%;
+  height: 100%;
+}
+
+.iphoneHero1,
+.iphoneHero2,
+.iphoneHero3 {
+  position: absolute;
+}
+
+.iphoneHero1 {
+  top: 0;
+  z-index: 2;
+}
+
+.iphoneHero2 {
+  top: 3vw;
+  left: 10vw;
+  z-index: 1;
+}
+
+.iphoneHero3 {
+  top: 6vw;
+  left: 15vw;
+  z-index: 0;
+}
+
+@media screen and (max-width: 990px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .heading {
+    margin-top: 5rem;
+    font-size: 4rem;
+  }
+
+  .main {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .heroBtns {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+  }
+
+  .heroBtn1,
+  .heroBtn2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .heroBtn2 img {
+    height: 1.5rem;
+  }
+
+  .heroFlag {
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 30vw;
+    height: 40vw;
+  }
+
+  .financeEnd1 {
+    top: -1px;
+    height: 5vw;
+  }
+
+  .financeContainer2 {
+    width: 37vw;
+    font-size: 0.7vw;
+    right: 3.2vw;
+    top: 2.95vw;
+  }
+
+  .financeEnd2 {
+    height: 6vw;
+  }
+
+  .financeContainer3 {
+    width: 23vw;
+    font-size: 0.7vw;
+    height: 4vw;
+    right: 14.5vw;
+    top: 9.5vw;
+    border-radius: 4px;
+  }
+
+  .starImg3Container {
+    margin-left: 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .starImg3 {
+    height: 80%;
+    margin: 0 0.5rem;
+  }
+
+  .ellipseCover {
+    height: 0.6rem;
+    width: 0.6rem;
+  }
+
+  .fullImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .flagAchievementsSecond,
+  .flagAchievementsFirst,
+  .flagAchievements2,
+  .financeContainer3Text {
+    font-size: 0.25rem;
+  }
+
+  .heroPhones {
+    height: 80vh;
+    width: 100%;
+  }
+
+  .backgroundEllipses {
+    width: 100%;
+    padding-top: 100%;
+    height: 20%;
+  }
+
+  .ellipse {
+    width: 120%;
+    height: 60%;
+  }
+
+  .iphoneHero1,
+  .iphoneHero2,
+  .iphoneHero3 {
+    height: 100%;
+    width: 90%;
+  }
+
+  .iphoneHero1 {
+    top: -25vw;
+    left: -10vw;
+  }
+
+  .iphoneHero2 {
+    top: -7vw;
+    left: 17vw;
+    z-index: 1;
+  }
+
+  .iphoneHero3 {
+    top: 7vw;
+    left: 37vw;
+    z-index: 0;
+  }
+  .downloadBtn {
+    font-size: 1rem;
+    font-family: "Clash Display";
+    margin: auto;
+    margin-right: 2.5rem;
+    background: black;
+    height: 35px;
+    width: auto;
+    display: flex;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+}
+.features {
+  position: relative;
+  display: flex;
+  margin: 15rem 0 15rem 0;
+}
+#featureStar {
+  position: absolute;
+  z-index: -2;
+  top: 11px;
+  left: 1px;
+}
+
+.features .radial {
+  position: absolute;
+  right: 8px;
+  top: 9%;
+}
+.featuresImg {
+  width: 50%;
+}
+
+.featuresMain {
+  width: 62%;
+  font-family: "Clash Display";
+  font-size: 1vw;
+}
+.featureHead {
+  font-family: "Clash Display Bold";
+  font-size: 2.7vw;
+  padding-top: 2%;
+}
+.featureHead span {
+  display: block;
+  color: red;
+  font-size: 2vw;
+  font-family: "Clash Display";
+}
+.featuresList {
+  padding: 0px;
+}
+.singleFeature {
+  display: block;
+  padding: 2% 0 2% 0;
+}
+.featureName {
+  display: flex;
+  align-items: center;
+  gap: 1%;
+  font-family: "Clash Display Bold";
+}
+.footer {
+  align-items: normal;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+  padding-inline: 4%;
+}
+.siteMain {
+  display: grid;
+  row-gap: 25px;
+  margin-top: 25px;
+  width: 300px;
+}
+.siteInfo {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  gap: 15px;
+  font-family: "Clash Display";
+}
+.email,
+.phone {
+  color: black;
+  display: flex;
+  font-family: "Clash Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  text-transform: capitalize;
+  width: 270px;
+  height: 30px;
+  gap: 15px;
+}
+
+.footerMid {
+  width: 600px;
+  gap: 12%;
+  margin-left: 42px;
+  display: flex;
+  justify-content: space-around;
+}
+ul {
+  list-style: none;
+}
+.Links,
+.Legal,
+.product,
+.Newsletter {
+  width: 200px;
+  font-size: 20px;
+  row-gap: 32px;
+  padding: 0;
+  display: grid;
+  height: fit-content;
+  font-family: "Clash Display";
+}
+@media screen and (max-width: 670px) {
+  .footerMid {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+#LinkHead,
+#ProductHead,
+#LegalHead,
+#News {
+  font-size: 35px;
+  font-family: "Clash Display Bold";
+}
+.Links li {
+  width: 150px;
+}
+.Legal li {
+  width: 150px;
+}
+.product li {
+  width: 150px;
+}
+.Newsletter li {
+  width: 150px;
+}
+.sub {
+  display: flex;
+  border: none;
+}
+.sub input {
+  height: 50px;
+  border: none;
+}
+.subBtn {
+  font-family: "Clash Display";
+  color: white;
+  background: black;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+.Newsletter {
+  margin-left: 42px;
+}
