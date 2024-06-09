@@ -41,32 +41,6 @@ export const Hero = () => {
           </button>
         </div>
         <div className="heroFlag">
-          {/* <div className="flagBlack">
-            <img src={A_svg} alt="A" id="textA" />
-              <div id="flagAchievements">
-                <div className="flagAchievements1">
-                  <div className="ellipseCover">
-                    <img src={trophy} alt="trophy" />
-                  </div>
-                </div>
-                <div className="flagAchievements2">
-                  Achievements
-                  <span>Best Finance App on Playstore</span>
-                </div>
-              </div>
-              <span id="slash">/</span>
-              <div id="flagFinance">
-                <div className="flagFinance1">
-                  <div className="ellipseCover">
-                    <img src={bankNote} alt="bankNote" />
-                  </div>
-                </div>
-                <div className="flagFinance2">
-                  Finance
-                  <span>Most Popular Accounting App</span>
-                </div>
-              </div>
-            </div> */}
           <div className="financeContainer1">
             <img src={A_svg} alt="A" id="textA" />
             <div id="flagAchievements">

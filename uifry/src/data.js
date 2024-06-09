@@ -5,18 +5,13 @@ export const data = {
   navLinks: [
     {
       text: "Home",
-      link: "#home",
+      link: "#hero",
       id: "1",
     },
     {
       text: "About Us",
       link: "#aboutUs",
       id: "2",
-    },
-    {
-      text: "Pricing",
-      link: "#pricing",
-      id: "3",
     },
     {
       text: "Features",

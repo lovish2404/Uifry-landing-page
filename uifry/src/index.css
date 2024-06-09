@@ -4,18 +4,26 @@
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Clash Display Bold";
   src: url("./fonts/ClashDisplay-Semibold.otf");
   font-weight: 700;
   font-style: normal;
 }
-.body {
+body {
   margin: 0;
-  padding: 0;
+  padding: 0px;
+}
+.main {
+  padding: 0px;
 }
 img {
   display: block;
+}
+.relative {
+  position: relative;
+  overflow-x: clip;
 }
 .navbar {
   display: flex;
@@ -27,12 +35,14 @@ img {
   position: relative;
   z-index: 2;
 }
+
 #logo {
   width: 3%;
   min-width: 30px;
   height: auto;
   margin: 0 0.3% 0.7% 2%;
 }
+
 .links {
   font-family: "Clash Display";
   font-size: 1.45rem;
@@ -42,11 +52,13 @@ img {
   display: flex;
   gap: 2vw;
 }
+
 @media screen and (max-width: 970px) {
   .links {
     display: none;
   }
 }
+
 li,
 a {
   text-decoration: none;
@@ -57,6 +69,7 @@ a {
   font-family: "Clash Display Bold";
   color: red;
 }
+
 .downloadBtn {
   font-size: 1.25rem;
   font-family: "Clash Display";
@@ -69,6 +82,7 @@ a {
   justify-content: center;
   margin-left: auto;
 }
+
 .downloadBtn a {
   color: white;
 }
@@ -79,6 +93,7 @@ a {
   z-index: -1;
   bottom: -2%;
 }
+
 .radial {
   width: 15.5vw;
   height: 8vw;
@@ -95,13 +110,15 @@ a {
   border-radius: 50%;
   filter: blur(30px);
 }
+
 .backgroundEllipses {
-  position: relative;
-  width: 40%;
-  padding-top: 40%;
+  position: absolute;
+  width: 100%;
+  padding-top: 80%;
   transform: rotate(45deg);
   margin: auto;
 }
+
 .ellipse {
   position: absolute;
   top: 50%;
@@ -112,76 +129,84 @@ a {
   border-radius: 50%;
   transform: translate(-50%, -50%) rotate(0deg);
 }
+
 .backgroundEllipses #second {
   transform: translate(-50%, -60%);
 }
+
 .backgroundEllipses #third {
   transform: translate(-50%, -70%);
 }
-@media (max-width: 600px) {
-  .backgroundEllipses {
-    width: 100%;
-    padding-top: 100%;
-  }
 
-  .ellipse {
-    width: 90%;
-    height: 60%;
-  }
-}
 .hero {
   display: flex;
   width: 100%;
   position: relative;
 }
+
 #starHero1 {
   position: absolute;
   top: 1%;
   z-index: -2;
 }
+
 .header {
   width: 50%;
   position: relative;
 }
+
 .header .radial {
   position: absolute;
   z-index: -1;
 }
+
 .heading {
-  width: 72%;
-  margin-left: 10%;
+  width: 100%;
+  margin-left: 5%;
   font-family: "Clash Display";
 }
+
 .heading h1 {
   font-family: "Clash Display Bold";
-  font-size: 3vw;
+  font-size: calc(1.5rem + 3.25vw);
+  line-height: calc(1.5rem + 3.25vw);
+  margin: 1.5rem 0;
 }
+
 .heading p {
-  font-size: 1vw;
+  font-size: calc(0.5rem + 0.6vw);
+  padding-right: 2rem;
 }
+
 .heroBtns {
   display: flex;
   width: 72%;
   margin-left: 10%;
   justify-content: flex-start;
 }
+
 .heroBtn1,
 .heroBtn2 {
   background: black;
   color: white;
   display: flex;
   height: 4vw;
-  width: 35%;
+  width: 40%;
   padding: 10px;
+  display: flex;
+  justify-content: center;
   gap: 15%;
   align-items: center;
 }
+
 .heroBtn1 span {
-  font-size: 1.2vw;
+  font-size: calc(0.5rem + 0.6vw);
 }
+
 .heroBtn1 img {
   width: 2.2vw;
 }
+
 .heroBtn2 {
   border: none;
   gap: 8%;
@@ -189,25 +214,20 @@ a {
   color: black;
 }
 
-.heroFlag {
-  position: relative;
-  height: 12%;
-  width: 90%;
-  margin-left: 10%;
-}
 #textA {
   position: absolute;
-  left: -8px;
-  top: 56%;
-  width: 20%;
-  height: auto;
+  left: -4vw;
+  top: -1vw;
+  width: auto;
+  height: 6vw;
+  transform: rotate(28deg);
 }
 
 .flagBlack {
   position: absolute;
-  top: 102px;
+  top: 9vw;
   background: black;
-  width: 28vw;
+  width: 27vw;
   display: flex;
   font-size: 0.7vw;
   height: 4vw;
@@ -223,12 +243,14 @@ a {
   align-items: center;
   padding-left: 3%;
 }
-.flagAchievements1,
+
+.flagAchievementsFirst,
 .flagFinance1 {
   border: solid 1px #ab3d3d;
   border-radius: 50%;
 }
-.flagAchievements2 span {
+
+.flagAchievementsSecond span {
   display: block;
 }
 
@@ -240,6 +262,7 @@ a {
   color: white;
   gap: 4%;
 }
+
 #slash {
   color: white;
   font-size: 27px;
@@ -252,9 +275,314 @@ a {
   position: relative;
 }
 
+/* new css */
+.headerRadial {
+  position: relative;
+  left: 20vw;
+  width: 100%;
+}
+
+.heroFlag {
+  position: relative;
+  /* height: 12%; */
+  width: 60%;
+  margin-left: 10%;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.financeContainer1 {
+  position: absolute;
+  /* top: 9vw; */
+  background: black;
+  width: 100%;
+  /* width: 27vw; */
+  display: flex;
+  font-size: 0.7vw;
+  height: 4vw;
+  transform: rotate(-28deg);
+  z-index: 1;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.financeEnd1 {
+  background: white;
+  position: absolute;
+  width: 2rem;
+  right: -2vw;
+  top: 0;
+  height: 4vw;
+  z-index: 2;
+}
+
+.financeContainer2 {
+  background: #ff5555;
+  width: 20vw;
+  display: flex;
+  font-size: 0.7vw;
+  height: 4vw;
+  position: absolute;
+  transform: rotate(-48deg);
+  position: absolute;
+  right: -0.8vw;
+  top: 0.95vw;
+  align-self: flex-end;
+  border-bottom-right-radius: 5px;
+}
+
+.flagAchievements2 {
+  color: black;
+  font-weight: bold;
+  height: 100;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.financeEnd2 {
+  background: white;
+  position: absolute;
+  width: 2rem;
+  height: 5vw;
+  z-index: 2;
+  left: -17px;
+  bottom: 0px;
+  transform: rotate(20deg);
+}
+
+.financeContainer3 {
+  background: #ff5555;
+  width: 17vw;
+  display: flex;
+  font-size: 0.7vw;
+  height: 4vw;
+  right: 5.5vw;
+  position: absolute;
+  transform: rotate(48deg);
+  top: 5.5vw;
+  align-self: flex-end;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.starImg3Container {
+  margin-left: 5rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.starImg3 {
+  /* margin-left:5rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black; */
+  height: 80%;
+  margin: 0 1rem;
+}
+
+.financeContainer3Text {
+  margin: auto;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.phones {
+  width: 100%;
+  height: 100%;
+}
+
+.iphoneHero1,
+.iphoneHero2,
+.iphoneHero3 {
+  position: absolute;
+}
+
+.iphoneHero1 {
+  top: 0;
+  z-index: 2;
+}
+
+.iphoneHero2 {
+  top: 3vw;
+  left: 10vw;
+  z-index: 1;
+}
+
+.iphoneHero3 {
+  top: 6vw;
+  left: 15vw;
+  z-index: 0;
+}
+
+@media screen and (max-width: 990px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .heading {
+    margin-top: 5rem;
+    font-size: 4rem;
+  }
+
+  .main {
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .heroBtns {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+  }
+
+  .heroBtn1,
+  .heroBtn2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .heroBtn2 img {
+    height: 1.5rem;
+  }
+
+  .heroFlag {
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 30vw;
+    height: 40vw;
+  }
+
+  .financeEnd1 {
+    top: -1px;
+    height: 5vw;
+  }
+
+  .financeContainer2 {
+    width: 37vw;
+    font-size: 0.7vw;
+    right: 3.2vw;
+    top: 2.95vw;
+  }
+
+  .financeEnd2 {
+    height: 6vw;
+  }
+
+  .financeContainer3 {
+    width: 23vw;
+    font-size: 0.7vw;
+    height: 4vw;
+    right: 14.5vw;
+    top: 9.5vw;
+    border-radius: 4px;
+  }
+
+  .starImg3Container {
+    margin-left: 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .starImg3 {
+    height: 80%;
+    margin: 0 0.5rem;
+  }
+
+  .ellipseCover {
+    height: 0.6rem;
+    width: 0.6rem;
+  }
+
+  .fullImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .flagAchievementsSecond,
+  .flagAchievementsFirst,
+  .flagAchievements2,
+  .financeContainer3Text {
+    font-size: 0.25rem;
+  }
+
+  .heroPhones {
+    height: 80vh;
+    width: 100%;
+  }
+
+  .backgroundEllipses {
+    width: 100%;
+    padding-top: 100%;
+    height: 20%;
+  }
+
+  .ellipse {
+    width: 120%;
+    height: 60%;
+  }
+
+  .iphoneHero1,
+  .iphoneHero2,
+  .iphoneHero3 {
+    height: 100%;
+    width: 90%;
+  }
+
+  .iphoneHero1 {
+    top: -25vw;
+    left: -10vw;
+  }
+
+  .iphoneHero2 {
+    top: -7vw;
+    left: 17vw;
+    z-index: 1;
+  }
+
+  .iphoneHero3 {
+    top: 7vw;
+    left: 37vw;
+    z-index: 0;
+  }
+  .downloadBtn {
+    font-size: 1rem;
+    font-family: "Clash Display";
+    margin: auto;
+    margin-right: 2.5rem;
+    background: black;
+    height: 35px;
+    width: auto;
+    display: flex;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+}
 .features {
   position: relative;
   display: flex;
+  margin: 15rem 0 15rem 0;
 }
 #featureStar {
   position: absolute;
@@ -280,6 +608,7 @@ a {
 .featureHead {
   font-family: "Clash Display Bold";
   font-size: 2.7vw;
+  padding-top: 2%;
 }
 .featureHead span {
   display: block;
@@ -292,11 +621,13 @@ a {
 }
 .singleFeature {
   display: block;
+  padding: 2% 0 2% 0;
 }
 .featureName {
   display: flex;
   align-items: center;
   gap: 1%;
+  font-family: "Clash Display Bold";
 }
 .footer {
   align-items: normal;

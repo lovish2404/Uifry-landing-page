@@ -7,7 +7,7 @@ export const Features = () => {
     <section className="features" id="features">
       <img src={star} alt="Star" id="featureStar" />
       <div className="radial"></div>
-      <div className="featuresImg">
+      <div className="featuresImg relative">
         <Ellipses></Ellipses>
       </div>
       <div className="featuresMain">
