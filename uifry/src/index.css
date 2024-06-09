@@ -1,0 +1,253 @@
+@font-face {
+  font-family: "Clash Display";
+  src: url("./fonts/ClashDisplay-Regular.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Clash Display Bold";
+  src: url("./fonts/ClashDisplay-Semibold.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+.body {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  height: 6vw;
+  min-height: 50px;
+  margin: 8px;
+  position: relative;
+  z-index: 2;
+}
+#logo {
+  width: 3%;
+  min-width: 30px;
+  height: auto;
+  margin: 0 0.3% 0.7% 2%;
+}
+.links {
+  font-family: "Clash Display";
+  font-size: 1.45rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.625rem;
+  display: flex;
+  gap: 2vw;
+}
+@media screen and (max-width: 970px) {
+  .links {
+    display: none;
+  }
+}
+li,
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.links a:first-of-type {
+  font-family: "Clash Display Bold";
+  color: red;
+}
+.downloadBtn {
+  font-size: 1.25rem;
+  font-family: "Clash Display";
+  margin: 30px;
+  background: black;
+  height: 50px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+.downloadBtn a {
+  color: white;
+}
+
+#navStar {
+  position: absolute;
+  right: -3%;
+  z-index: -1;
+  bottom: -2%;
+}
+.radial {
+  width: 15.5vw;
+  height: 8vw;
+  background: radial-gradient(
+      circle at bottom,
+      rgb(255 101 73),
+      rgb(124 39 24 / 0%) 77%
+    ),
+    radial-gradient(
+      circle at top,
+      rgba(255, 215, 0, 1),
+      rgba(255, 215, 0, 0) 80%
+    );
+  border-radius: 50%;
+  filter: blur(30px);
+}
+.backgroundEllipses {
+  position: relative;
+  width: 40%;
+  padding-top: 40%;
+  transform: rotate(45deg);
+  margin: auto;
+}
+.ellipse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 58%;
+  border: 1px solid black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+.backgroundEllipses #second {
+  transform: translate(-50%, -60%);
+}
+.backgroundEllipses #third {
+  transform: translate(-50%, -70%);
+}
+@media (max-width: 600px) {
+  .backgroundEllipses {
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .ellipse {
+    width: 90%;
+    height: 60%;
+  }
+}
+.hero {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+#starHero1 {
+  position: absolute;
+  top: 1%;
+  z-index: -2;
+}
+.header {
+  width: 50%;
+  position: relative;
+}
+.header .radial {
+  position: absolute;
+  z-index: -1;
+}
+.heading {
+  width: 72%;
+  margin-left: 10%;
+  font-family: "Clash Display";
+}
+.heading h1 {
+  font-family: "Clash Display Bold";
+  font-size: 3vw;
+}
+.heading p {
+  font-size: 1vw;
+}
+.heroBtns {
+  display: flex;
+  width: 72%;
+  margin-left: 10%;
+  justify-content: flex-start;
+}
+.heroBtn1,
+.heroBtn2 {
+  background: black;
+  color: white;
+  display: flex;
+  height: 4vw;
+  width: 35%;
+  padding: 10px;
+  gap: 15%;
+  align-items: center;
+}
+.heroBtn1 span {
+  font-size: 1.2vw;
+}
+.heroBtn1 img {
+  width: 2.2vw;
+}
+.heroBtn2 {
+  border: none;
+  gap: 8%;
+  background: none;
+  color: black;
+}
+
+.heroFlag {
+  position: relative;
+  height: 12%;
+  width: 90%;
+  margin-left: 10%;
+}
+#textA {
+  position: absolute;
+  left: -8px;
+  top: 56%;
+  width: 20%;
+  height: auto;
+}
+
+.flagBlack {
+  position: absolute;
+  top: 102px;
+  background: black;
+  width: 28vw;
+  display: flex;
+  font-size: 0.7vw;
+  height: 4vw;
+  transform: rotate(-28deg);
+}
+
+#flagAchievements,
+#flagFinance {
+  color: white;
+  display: flex;
+  width: 47%;
+  gap: 4%;
+  align-items: center;
+  padding-left: 3%;
+}
+.flagAchievements1,
+.flagFinance1 {
+  border: solid 1px #ab3d3d;
+  border-radius: 50%;
+}
+.flagAchievements2 span {
+  display: block;
+}
+
+.flagFinance {
+  width: 47%;
+  padding-left: 3%;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 4%;
+}
+#slash {
+  color: white;
+  font-size: 27px;
+  display: flex;
+  align-items: center;
+}
+
+.heroPhones {
+  width: 50%;
+  position: relative;
+}
