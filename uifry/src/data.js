@@ -10,7 +10,7 @@ export const data = {
     },
     {
       text: "About Us",
-      link: "#aboutUS",
+      link: "#aboutUs",
       id: "2",
     },
     {

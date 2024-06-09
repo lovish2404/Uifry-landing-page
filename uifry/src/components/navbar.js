@@ -18,7 +18,7 @@ export const Navbar = () => {
       <ul className="links">
         {data.navLinks.map(({ text, link, id }) => {
           return (
-            <Link to={link} className="navLinks" key={id}>
+            <Link smooth to={link} className="navLinks" key={id}>
               {text}
             </Link>
           );

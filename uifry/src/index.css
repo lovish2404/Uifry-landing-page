@@ -251,3 +251,152 @@ a {
   width: 50%;
   position: relative;
 }
+
+.features {
+  position: relative;
+  display: flex;
+}
+#featureStar {
+  position: absolute;
+  z-index: -2;
+  top: 11px;
+  left: 1px;
+}
+
+.features .radial {
+  position: absolute;
+  right: 8px;
+  top: 9%;
+}
+.featuresImg {
+  width: 50%;
+}
+
+.featuresMain {
+  width: 62%;
+  font-family: "Clash Display";
+  font-size: 1vw;
+}
+.featureHead {
+  font-family: "Clash Display Bold";
+  font-size: 2.7vw;
+}
+.featureHead span {
+  display: block;
+  color: red;
+  font-size: 2vw;
+  font-family: "Clash Display";
+}
+.featuresList {
+  padding: 0px;
+}
+.singleFeature {
+  display: block;
+}
+.featureName {
+  display: flex;
+  align-items: center;
+  gap: 1%;
+}
+.footer {
+  align-items: normal;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+  padding-inline: 4%;
+}
+.siteMain {
+  display: grid;
+  row-gap: 25px;
+  margin-top: 25px;
+  width: 300px;
+}
+.siteInfo {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  gap: 15px;
+  font-family: "Clash Display";
+}
+.email,
+.phone {
+  color: black;
+  display: flex;
+  font-family: "Clash Display";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  text-transform: capitalize;
+  width: 270px;
+  height: 30px;
+  gap: 15px;
+}
+
+.footerMid {
+  width: 600px;
+  gap: 12%;
+  margin-left: 42px;
+  display: flex;
+  justify-content: space-around;
+}
+ul {
+  list-style: none;
+}
+.Links,
+.Legal,
+.product,
+.Newsletter {
+  width: 200px;
+  font-size: 20px;
+  row-gap: 32px;
+  padding: 0;
+  display: grid;
+  height: fit-content;
+  font-family: "Clash Display";
+}
+@media screen and (max-width: 670px) {
+  .footerMid {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+#LinkHead,
+#ProductHead,
+#LegalHead,
+#News {
+  font-size: 35px;
+  font-family: "Clash Display Bold";
+}
+.Links li {
+  width: 150px;
+}
+.Legal li {
+  width: 150px;
+}
+.product li {
+  width: 150px;
+}
+.Newsletter li {
+  width: 150px;
+}
+.sub {
+  display: flex;
+  border: none;
+}
+.sub input {
+  height: 50px;
+  border: none;
+}
+.subBtn {
+  font-family: "Clash Display";
+  color: white;
+  background: black;
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+.Newsletter {
+  margin-left: 42px;
+}

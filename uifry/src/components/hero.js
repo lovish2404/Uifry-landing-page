@@ -19,7 +19,9 @@ export const Hero = () => {
     <section className="hero" id="hero">
       <img src={star} alt="star" id="starHero1" />
       <div className="header">
-        <div className="radial" />
+        <div className="headerRadial">
+          <div className="radial" />
+        </div>
         <div className="heading">
           <h1>{data.hero.headline}</h1>
           <p>
@@ -39,9 +41,8 @@ export const Hero = () => {
           </button>
         </div>
         <div className="heroFlag">
-          <div className="divTemp">
+          {/* <div className="flagBlack">
             <img src={A_svg} alt="A" id="textA" />
-            <div className="flagBlack">
               <div id="flagAchievements">
                 <div className="flagAchievements1">
                   <div className="ellipseCover">
@@ -65,20 +66,50 @@ export const Hero = () => {
                   <span>Most Popular Accounting App</span>
                 </div>
               </div>
+            </div> */}
+          <div className="financeContainer1">
+            <img src={A_svg} alt="A" id="textA" />
+            <div id="flagAchievements">
+              <div className="flagAchievementsFirst">
+                <div className="ellipseCover">
+                  <img className="fullImage" src={trophy} alt="trophy" />
+                </div>
+              </div>
+              <div className="flagAchievementsSecond">
+                Achievements
+                <span>Best Finance App on Playstore</span>
+              </div>
+            </div>
+            <span id="slash">/</span>
+            <div id="flagFinance">
+              <div className="flagFinance1">
+                <div className="ellipseCover">
+                  <img className="fullImage" src={bankNote} alt="bankNote" />
+                </div>
+              </div>
+              <div className="flagAchievementsSecond">
+                Finance
+                <span>Most Popular Accounting App</span>
+              </div>
+            </div>
+            <div className="financeEnd1"></div>
+          </div>
+          <div className="financeContainer2">
+            <div className="financeEnd2"></div>
+            <div className="flagAchievements2">
+              Make the best financial decisions
+            </div>
+            <div className="financeContainer3">
+              <div className="starImg3Container">
+                <img className="starImg3" src="/Star.png" alt="star" />
+              </div>
+              <div className="font-bold financeContainer3Text">
+                Uifry Premium
+                <br />
+                <span className="font-normal">Free Trial</span>
+              </div>
             </div>
           </div>
-
-          {/* <div className="flagRed1">Make The Best Financial Decisions</div>
-          <div className="flagRed2">
-            <div></div>
-            <div>
-              <img src={star} alt="star" />
-            </div>
-            <div>
-              Uifry Premium
-              <span>Free Trial</span>
-            </div>
-          </div> */}
         </div>
       </div>
       <HeroPhones />

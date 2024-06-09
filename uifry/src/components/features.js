@@ -2,15 +2,13 @@ import React from "react";
 import { Ellipses } from "./ellipses";
 import { data } from "../data";
 import star from "../images/Star.jpg";
-import iphoneFeature from "../images/IphoneFeature.svg";
 export const Features = () => {
   return (
-    <section className="features">
+    <section className="features" id="features">
       <img src={star} alt="Star" id="featureStar" />
       <div className="radial"></div>
       <div className="featuresImg">
         <Ellipses></Ellipses>
-        <img src={iphoneFeature} alt="iphone" id="iphoneF" />
       </div>
       <div className="featuresMain">
         <div className="featureHead">
