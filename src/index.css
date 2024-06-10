@@ -141,6 +141,7 @@ a {
 .hero {
   display: flex;
   width: 100%;
+  margin-top: 40px;
   position: relative;
 }
 
@@ -425,8 +426,29 @@ a {
   left: 15vw;
   z-index: 0;
 }
+@media screen and (max-width: 1200px) {
+  .iphoneHero1,
+  .iphoneHero2,
+  .iphoneHero3 {
+    height: 80%;
+  }
+  .heroPhones .radial {
+    position: relative;
+    left: 12%;
+    top: -39%;
+  }
+  .starImg3Container {
+    margin-left: 30%;
+  }
+  .financeEnd1 {
+    width: 1rem;
+  }
+}
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 500px) {
+  .features {
+    margin: 5rem 0 5rem 0 !important;
+  }
   .hero {
     display: flex;
     flex-direction: column;
@@ -580,9 +602,9 @@ a {
   }
 }
 .features {
+  margin: 20vw 0 8vw 0;
   position: relative;
   display: flex;
-  margin: 15rem 0 15rem 0;
 }
 #featureStar {
   position: absolute;
