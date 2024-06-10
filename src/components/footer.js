@@ -48,7 +48,7 @@ export const Footer = () => {
           <li id="News">Newsletter</li>
           <li id="newsText">Stay Up To Date</li>
           <form className="sub">
-            <input type="email"></input>
+            <input type="email" placeholder="e-mail"></input>
             <button className="subBtn">Subscribe</button>
           </form>
         </ul>

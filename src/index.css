@@ -717,6 +717,9 @@ ul {
 }
 .sub input {
   height: 50px;
+  width: 120px;
+  font-family: "Clash Display";
+  padding-left: 32px;
   border: none;
 }
 .subBtn {
@@ -727,7 +730,12 @@ ul {
 .copyright {
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .Newsletter {
   margin-left: 42px;
+}
+
+.navLinks:hover {
+  color: red;
 }
