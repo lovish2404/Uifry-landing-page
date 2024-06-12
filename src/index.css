@@ -426,6 +426,10 @@ a {
   left: 15vw;
   z-index: 0;
 }
+.heroPhones .radial {
+  position: relative;
+  left: 12%;
+}
 @media screen and (max-width: 1200px) {
   .iphoneHero1,
   .iphoneHero2,
