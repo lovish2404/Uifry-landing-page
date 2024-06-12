@@ -53,7 +53,7 @@ img {
   gap: 2vw;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 750px) {
   .links {
     display: none;
   }
@@ -549,6 +549,7 @@ a {
 
   .heroPhones {
     height: 80vh;
+    min-height: 38rem;
     width: 100%;
   }
 
