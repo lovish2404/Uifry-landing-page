@@ -606,6 +606,34 @@ a {
     margin-left: auto;
   }
 }
+#featureIPhone {
+  height: 140%;
+  position: absolute;
+  top: -6%;
+  left: 33%;
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  #featureIPhone {
+    height: 117%;
+  }
+}
+@media screen and (max-width: 450px) {
+  #featureIPhone {
+    left: 25%;
+  }
+}
+
+#rightRadial {
+  left: 7%;
+  top: 29%;
+}
+
+@media screen and (max-width: 1260px) and (min-width: 500px) {
+  .starImg3 {
+    margin: 0 0.3rem;
+  }
+}
 .features {
   margin: 20vw 0 8vw 0;
   position: relative;
